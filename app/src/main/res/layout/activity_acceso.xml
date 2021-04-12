@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/acc_llPrincipal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_categoria_01"
+    android:orientation="vertical"
+    tools:context=".acceso">
+
+    <LinearLayout
+        android:id="@+id/acc_llLogo"
+        android:layout_width="match_parent"
+        android:layout_height="216dp"
+        android:background="@drawable/fondo_categoria_02"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/acc_ivLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="178dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/logo_trans3_01" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="267dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/acc_llUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/acc_ivUser"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tint="@color/marron_cf"
+                    app:srcCompat="@drawable/ic_baseline_person_24" />
+
+                <EditText
+                    android:id="@+id/acc_etUsuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:hint="@string/acceso_user"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/acc_llPassword"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tint="@color/marron_cf"
+                    app:srcCompat="@drawable/ic_baseline_vpn_key_24" />
+
+                <EditText
+                    android:id="@+id/acc_etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|center_horizontal|center_vertical"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:hint="@string/acceso_pass"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/acc_llBotones"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/acc_ibVolver"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/amarillo_cf"
+                    android:tint="@color/marron_cf"
+                    app:srcCompat="@drawable/ic_baseline_chevron_left_24" />
+
+                <Button
+                    android:id="@+id/bAcceder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="140dp"
+                    android:layout_weight="1"
+                    android:text="@string/acceso_boton" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

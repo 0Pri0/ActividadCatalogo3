@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llPrincipal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_categoria_01"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
+
+    <LinearLayout
+        android:id="@+id/llLogo"
+        android:layout_width="match_parent"
+        android:layout_height="216dp"
+        android:background="@drawable/fondo_categoria_02"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="match_parent"
+            android:layout_height="178dp"
+            app:srcCompat="@drawable/logo_trans3_01" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llBebestibles"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@android:drawable/list_selector_background"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ibBebestible"
+            android:layout_width="206dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#00FFFFFF"
+            android:clickable="false" />
+
+        <TextView
+            android:id="@+id/tvBebestible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/boogaloo"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="TextView"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSandiwchFondo"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/fondo_categoria_02"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llSandwich"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:drawable/list_selector_background"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvSandwish"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/boogaloo"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:text="TextView"
+                android:textSize="30sp" />
+
+            <ImageButton
+                android:id="@+id/ibSandwich"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/transparent"
+                android:clickable="false"
+                android:scaleType="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPasteleria"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@android:drawable/list_selector_background"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ibPasteleria"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/transparent"
+            android:clickable="false"
+            android:scaleType="center" />
+
+        <TextView
+            android:id="@+id/tvPasteleria"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/boogaloo"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="TextView"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPanaderiaFondo"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/fondo_categoria_02"
+        android:clickable="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llPanaderia"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:drawable/list_selector_background"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvPanaderia"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/boogaloo"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:text="TextView"
+                android:textSize="30sp" />
+
+            <ImageButton
+                android:id="@+id/ibPanaderia"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/transparent"
+                android:clickable="false"
+                android:scaleType="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llAcceso"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_AgregarUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/amarillo_cf"
+            android:clickable="true"
+            android:visibility="visible"
+            app:srcCompat="@drawable/ic_baseline_group_add_24" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_modificarCategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/amarillo_cf"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_baseline_apps_24" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_agregarProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/amarillo_cf"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_baseline_article_24" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_salir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/amarillo_cf"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_baseline_close_24" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_acceso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/amarillo_cf"
+            android:backgroundTintMode="add"
+            android:clickable="true"
+            app:rippleColor="@color/black"
+            app:srcCompat="@drawable/ic_baseline_vpn_key_24" />
+    </LinearLayout>
+
+</LinearLayout>
